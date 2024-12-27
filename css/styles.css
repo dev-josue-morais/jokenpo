@@ -3,3 +3,53 @@
     padding-left: 0;
     box-sizing: border-box;
 }
+.background {
+    width: 100vw;
+    height: 100vh;
+    animation: pulseGradient 50s infinite linear;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.conteiner {
+    width: min-content;    /* A largura da div será ajustada ao tamanho do conteúdo */
+    height: min-content;
+    display: block;
+    padding: 20px;
+}
+.buttons {
+    width: min-content;    /* A largura da div será ajustada ao tamanho do conteúdo */
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+p {
+    font-weight: 600;
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+span, h1 {
+    font-weight: 900;
+}

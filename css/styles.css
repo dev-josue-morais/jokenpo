@@ -3,29 +3,38 @@
     padding-left: 0;
     box-sizing: border-box;
 }
+
 .background {
     width: 100vw;
     height: 100vh;
+    background-size: cover;
     animation: pulseGradient 50s infinite linear;
 }
+
 body {
+    /* background: url("https://picsum.photos/1600/900"); */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
+
 h1 {
+    font-size: 60px;
     display: flex;
     justify-content: center;
 }
+
 .conteiner {
-    width: min-content;    /* A largura da div será ajustada ao tamanho do conteúdo */
+    background-color: rgba(240, 248, 255, 0.3);
+    width: min-content;
     height: min-content;
     display: block;
     padding: 20px;
+    border-radius: 15px;
 }
+
 .buttons {
-    width: min-content;    /* A largura da div será ajustada ao tamanho do conteúdo */
+    width: min-content;
     height: min-content;
     display: flex;
     justify-content: center;
@@ -34,15 +43,24 @@ h1 {
     padding: 10px;
     margin-bottom: 15px;
 }
+
 button {
+    margin: 0 3px;
     width: 60px;
     height: 60px;
     font-size: 40px;
+    transition: opacity 0.5s ease-in-out;
 }
+.botRandom {
+    display: none;
+}
+
+
 button:hover {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.6;
 }
+
 p {
     font-weight: 600;
     padding: 4px;
@@ -50,6 +68,36 @@ p {
     margin-bottom: 10px;
     font-size: 25px;
 }
-span, h1 {
+
+span,
+h1 {
     font-weight: 900;
+}
+
+.spokValue {
+    color: rgb(226, 238, 61);
+}
+
+.youValue {
+    color: rgb(79, 236, 163);
+}
+
+#rock {
+    background-color: 	rgb(139,0,0);
+}
+
+#papper {
+    background-color: 	rgb(128,0,128);
+}
+
+#scissor {
+    background-color: 	rgb(255,255,0);
+}
+
+#lizard {
+    background-color: 	rgb(0,155,0);
+}
+
+#spok {
+    background-color: 	rgb(0,0,205);
 }

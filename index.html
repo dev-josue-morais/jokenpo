@@ -12,14 +12,15 @@
     <div class="conteiner">
         <h1>Jokenpô</h1>
         <div class="buttons">
-            <button id="rock">&#128074</button>
-            <button id="papper">&#128400</button>
-            <button id="scissor">&#9996</button>
-            <button id="lizard">&#129422</button>
-            <button id="spok">&#128406</button>
+            <button onclick="play('Pedra')" id="rock">&#128074</button>
+            <button onclick="play('Papel')" id="papper">&#128400</button>
+            <button onclick="play('Tesoura')" id="scissor">&#9996</button>
+            <button onclick="play('Lagarto')" id="lizard">&#129422</button>
+            <button onclick="play('Spok')" id="spok">&#128406</button>
         </div>
+        <p class="botRandom">Spok</p>
         <p class="you">Sua pontuação: <span class="youValue">0</span></p>
-        <p class="spok">Pontuação do Spok: <span class="spokValue">0</span></p>
+        <p class="sheldon">Pontuação do sheldon: <span class="sheldonValue">0</span></p>
     </div>
 </body>
 <script src="./js/script.js"></script>

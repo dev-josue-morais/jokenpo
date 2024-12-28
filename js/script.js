@@ -24,7 +24,7 @@ function generateKeyframes() {
     for (let i = 0; i < totalSteps; i++) {
         const percentage = (i * percentageStep).toFixed(2) + "%";
         keyframes += `    ${percentage} {\n        background: radial-gradient(circle, ${colors.join(", ")});\n    }\n`;
-    
+
         const firstColor = colors.shift();
         colors.push(firstColor);
     }
@@ -36,3 +36,28 @@ function generateKeyframes() {
 
     document.querySelector('.background').style.animation = 'pulseGradient 5s infinite linear';
 } generateKeyframes();
+
+
+
+
+
+
+// let randomInt = Math.floor(Math.random() * (toValue - fromValue + 1)) + fromValue;
+//     alert(`Número sorteado: ${randomInt}`);
+
+
+botRandom = document.getElementsByClassName("botRandom");
+youValue = document.getElementsByClassName("youValue");
+sheldonValue = document.getElementsByClassName("sheldonValue");
+
+const itens = ["Pedra", "Papel", "Tesoura", "Lagarto", "Spok"];
+
+
+
+function randomInt() {
+    let random = Math.floor(Math.random() * itens.length);
+    return itens[random];
+}
+
+function play(item) {
+};

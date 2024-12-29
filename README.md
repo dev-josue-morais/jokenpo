@@ -1,4 +1,4 @@
-# Jogo: Pedra, Papel, Tesoura, Lagarto, Spock
+# Jogo: Pedra, Papel, Tesoura, Lagarto, Spock com Gradiente Animado
 
 Este projeto implementa o famoso jogo **"Pedra, Papel, Tesoura, Lagarto, Spock"** com uma interface estilizada e um fundo animado com gradiente pulsante.
 
@@ -20,3 +20,9 @@ Este projeto implementa o famoso jogo **"Pedra, Papel, Tesoura, Lagarto, Spock"*
 
 - **HTML/CSS** para a estrutura e estilos.
 - **JavaScript** para a lógica do jogo e animação do gradiente.
+
+## Links do Projeto
+
+- [Meu LinkedIn](https://www.linkedin.com/in/josue28jrd/)
+- [Demonstração do jogo](https://josue28jrd.github.io/jokenpo/)
+- [Código no GitHub](https://github.com/josue28jrd/jokenpo)

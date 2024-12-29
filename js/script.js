@@ -77,10 +77,10 @@ function play(item) {
     } else if ( rules[item].vence[random]) {
         win++;
         youValue.innerHTML = `${win}`;
-        playText.innerHTML = `<span class="playTextSpan">Você Venceu</span><br>Sheldon Jogou <span class="playerRandom"><span class="playerRandom"><br>${rules[item].vence[random]}`;
+        playText.innerHTML = `<span class="playTextSpan">Você Venceu</span><br>Sheldon Jogou <span class="playerRandom">${random}<br>${rules[item].vence[random]}</span>`;
     } else {
         lose++;
         sheldonValue.innerHTML = `${lose}`;
-        playText.innerHTML = `<span class="playTextSpan">Você Perdeu</span><br>Sheldon Jogou <span class="playerRandom"><br>${rules[random].vence[item]}</span>`;
+        playText.innerHTML = `<span class="playTextSpan">Você Perdeu</span><br>Sheldon Jogou <span class="playerRandom">${random}<br>${rules[random].vence[item]}</span>`;
     }
 };

@@ -46,18 +46,41 @@ function generateKeyframes() {
 //     alert(`Número sorteado: ${randomInt}`);
 
 
-botRandom = document.getElementsByClassName("botRandom");
-youValue = document.getElementsByClassName("youValue");
-sheldonValue = document.getElementsByClassName("sheldonValue");
+playText = document.querySelector(".playText");
+youValue = document.querySelector(".youValue");
+sheldonValue = document.querySelector(".sheldonValue");
+playTextSpan =document.querySelector(".playTextSpan")
+win = 0;
+lose = 0;
 
-const itens = ["Pedra", "Papel", "Tesoura", "Lagarto", "Spok"];
-
-
+const itens = ["Pedra", "Papel", "Tesoura", "Lagarto", "Spock"];
+const rules = {
+    Pedra: {vence: {Lagarto: "Pedra esmaga Lagarto", Tesoura: "Pedra amassa Tesoura"},},
+    Papel: {vence: {Pedra: "Papel cobre pedra", Spock: "Papel refuta Spock"},},
+    Tesoura: {vence: {Papel: "Tesoura corta Papel", Lagarto: "Tesoura decapita Lagarto"},},
+    Lagarto: {vence: {Papel: "Lagarto come Papel", Spock: "Lagarto envenena Spock"},},
+    Spock: {vence: {Tesoura: "Spock derrete Tesoura", Pedra: "Spock vaporiza Pedra"},},
+}
 
 function randomInt() {
     let random = Math.floor(Math.random() * itens.length);
     return itens[random];
 }
 
+
 function play(item) {
+    playText.style.display = "block";
+    let random = randomInt()
+    if (random === item) {
+        playText.innerHTML = `<span class="playTextSpan">Deu Empate</span><br>Sheldon Jogou <span class="playerRandom">${random}</span>`;
+
+    } else if ( rules[item].vence[random]) {
+        win++;
+        youValue.innerHTML = `${win}`;
+        playText.innerHTML = `<span class="playTextSpan">Você Venceu</span><br>Sheldon Jogou <span class="playerRandom"><span class="playerRandom"><br>${rules[item].vence[random]}`;
+    } else {
+        lose++;
+        sheldonValue.innerHTML = `${lose}`;
+        playText.innerHTML = `<span class="playTextSpan">Você Perdeu</span><br>Sheldon Jogou <span class="playerRandom"><br>${rules[random].vence[item]}</span>`;
+    }
 };

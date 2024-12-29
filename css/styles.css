@@ -25,7 +25,7 @@ h1 {
 }
 
 .conteiner {
-    background-color: rgba(240, 248, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
     width: min-content;
     height: min-content;
     display: block;
@@ -62,7 +62,7 @@ p {
     font-weight: 600;
     padding: 4px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 25px;
 }
 
@@ -72,22 +72,28 @@ h1 {
 }
 
 .sheldonValue {
-    color: rgb(226, 238, 61);
+    color: rgb(255, 10, 10);
 }
 .playText {
     margin: -15px 0 -3px 0;
     display: none;
     color: rgb(0, 6, 94);
 }
-.playTextSpan {
+.playTextOrange {
+    color: rgb(255, 72, 0);
+}
+.playTextRed {
     color: red;
+}
+.playTextGreen {
+    color: rgb(32, 163, 32);
 }
 .playerRandom {
     color: rgb(0, 85, 18);
 }
 
 .youValue {
-    color: rgb(79, 236, 163);
+    color: blue;
 }
 
 #rock {

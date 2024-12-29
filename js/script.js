@@ -72,15 +72,15 @@ function play(item) {
     playText.style.display = "block";
     let random = randomInt()
     if (random === item) {
-        playText.innerHTML = `<span class="playTextSpan">Deu Empate</span><br>Sheldon Jogou <span class="playerRandom">${random}</span>`;
+        playText.innerHTML = `<span class="playTextOrange">Deu Empate</span><br>Sheldon Jogou <span class="playerRandom">${random}</span>`;
 
     } else if ( rules[item].vence[random]) {
         win++;
         youValue.innerHTML = `${win}`;
-        playText.innerHTML = `<span class="playTextSpan">Você Venceu</span><br>Sheldon Jogou <span class="playerRandom">${random}<br>${rules[item].vence[random]}</span>`;
+        playText.innerHTML = `<span class="playTextGreen">Você Venceu</span><br>Sheldon Jogou <span class="playerRandom">${random}<br>${rules[item].vence[random]}</span>`;
     } else {
         lose++;
         sheldonValue.innerHTML = `${lose}`;
-        playText.innerHTML = `<span class="playTextSpan">Você Perdeu</span><br>Sheldon Jogou <span class="playerRandom">${random}<br>${rules[random].vence[item]}</span>`;
+        playText.innerHTML = `<span class="playTextRed">Você Perdeu</span><br>Sheldon Jogou <span class="playerRandom">${random}<br>${rules[random].vence[item]}</span>`;
     }
 };

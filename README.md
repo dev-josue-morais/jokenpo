@@ -23,6 +23,6 @@ Este projeto implementa o famoso jogo **"Pedra, Papel, Tesoura, Lagarto, Spock"*
 
 ## Links do Projeto
 
-- [Meu LinkedIn](https://www.linkedin.com/in/josue28jrd/)
+- [Meu LinkedIn](https://www.linkedin.com/in/josuemorais/)
 - [Demonstração do jogo](https://josue28jrd.github.io/jokenpo/)
 - [Código no GitHub](https://github.com/josue28jrd/jokenpo)
